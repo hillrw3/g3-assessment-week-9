@@ -9,7 +9,7 @@
 
 <div class="row">
   <div class="col-lg-4" id="new_todo_form">
-    <form method="post" action="/todos">
+    <form method="post" action="/todos/<%= current_user.id %>">
       <ul>
         <li>
           <label for="body">What do you need to do?</label>
