@@ -38,3 +38,16 @@ ul {
     padding: 10px;
     font-weight: bolder;
 }
+
+.complete_button {
+    height: 25px;
+}
+
+#button {
+    float:left;
+}
+
+* {
+    font-family: Helvetica;
+}
+

@@ -1,6 +1,6 @@
     <form action="/edit/<%= @item[:id] %>" method="post">
       <h4>Edit this ToDo</h4>
       <input name="new_todo" value="<%= @item[:body] %>">
-      <input type="hidden" name="_method" value="patch">
-      <input type="submit" value="Edit">
+      <input type="hidden" name="_method" value="patch"><br>
+      <input id="button" type="submit" value="Edit">
     </form>
