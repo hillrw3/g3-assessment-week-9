@@ -26,7 +26,7 @@ feature "ToDos" do
     end
   end
 
-  scenario "A user can edit a ToDo" do
+  scenario "A user can edit and complete a ToDo" do
     visit "/"
     click_link "Register"
 
@@ -56,5 +56,9 @@ feature "ToDos" do
     fill_in "new_todo", with:"Become an awesome developer"
     click_button "Edit"
     expect(page).to have_content "Become an awesome developer"
+
+    click_button "Complete"
+    expect(page).to have_no_content "Become an awesome developer"
+    expect(page).to have_content "ToDo Completed"
   end
 end
